@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "BarcodeWork128"
+rootProject.name = "Barcode Work 128"
 include ':app'

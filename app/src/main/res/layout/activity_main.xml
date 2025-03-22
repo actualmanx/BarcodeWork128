@@ -1,32 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".MainActivity">
+    android:padding="24dp">
 
+    <!-- Input Field -->
     <EditText
-        android:id="@+id/editTextInput"
+        android:id="@+id/inputText"
         android:layout_width="match_parent"
-        android:layout_height="66dp"
-        android:hint="Enter text here" />
+        android:layout_height="wrap_content"
+        android:hint="Enter text to encode"
+        android:inputType="text"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:padding="12dp" />
 
+    <!-- Generate Button -->
     <Button
-        android:id="@+id/buttonGenerate"
-        android:layout_width="wrap_content"
+        android:id="@+id/generateButton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:text="Generate Barcode"
         android:layout_marginTop="16dp"
-        android:text="Generate Barcode" />
+        android:padding="12dp" />
 
+    <!-- Generated Barcode Image -->
     <ImageView
-        android:id="@+id/imageViewBarcode"
+        android:id="@+id/barcodeImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter" />
+
+    <!-- History Label -->
+    <TextView
+        android:id="@+id/historyLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="History"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:layout_marginTop="16dp"
-        android:layout_gravity="center_horizontal" />
+        android:padding="8dp" />
+
+    <!-- History ListView -->
+    <ListView
+        android:id="@+id/historyListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
 
 </LinearLayout>
