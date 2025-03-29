@@ -7,7 +7,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
-import com.actualmanx.barcodework128.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 
