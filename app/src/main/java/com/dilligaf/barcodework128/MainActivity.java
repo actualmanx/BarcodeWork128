@@ -7,9 +7,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
+import com.actualmanx.barcodework128.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.actualmanx.barcodework128.R;
 import com.google.zxing.BarcodeFormat;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
 
@@ -25,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Initialize UI elements
-        editTextInput = findViewById(R.id.editTextInput);
-        buttonGenerate = findViewById(R.id.buttonGenerate);
-        imageViewBarcode = findViewById(R.id.imageViewBarcode);
+        editTextInput = findViewById(R.id.inputText);
+        buttonGenerate = findViewById(R.id.generateButton);
+        imageViewBarcode = findViewById(R.id.barcodeImage);
 
         // Set onClick listener for the generate button
         buttonGenerate.setOnClickListener(new View.OnClickListener() {
