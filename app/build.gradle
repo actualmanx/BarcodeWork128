@@ -4,7 +4,8 @@ plugins {
 
 android {
     namespace 'com.actualmanx.barcodework128'
-    compileSdk 35
+    compileSdkVersion 36
+
 
     defaultConfig {
         applicationId "com.actualmanx.barcodework128"
