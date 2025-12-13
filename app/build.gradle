@@ -11,7 +11,7 @@ android {
         applicationId "com.actualmanx.barcodework128"
         minSdk 24
         targetSdkVersion defaultTargetSdkVersion
-        versionCode 1
+        versionCode 2
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
